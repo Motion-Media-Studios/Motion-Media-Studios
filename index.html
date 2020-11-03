@@ -27,6 +27,21 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-181903820-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-181903820-1');
+  </script>
+
 </head>
 
 <body>
@@ -661,20 +676,23 @@
             <form action="https://formspree.io/f/xvovrwga" method="POST" class="php-email-form">
               <div class="form-row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"/>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" />
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"/>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" />
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"/>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" />
               </div>
               <div class="form-group">
                 <textarea class="form-control" name="message" rows="5" data-rule="required"
                   data-msg="Please write something for us" placeholder="Message"></textarea>
               </div>
-              
+
+              <div class="g-recaptcha" data-sitekey="6Ldqbd4ZAAAAAD-Ud4H9hz30q7liI6MWC8arXtcX"></div>
+              <br />
+
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
 
@@ -715,6 +733,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
